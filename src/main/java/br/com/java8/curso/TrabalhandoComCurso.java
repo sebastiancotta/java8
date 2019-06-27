@@ -1,7 +1,6 @@
 package br.com.java8.curso;
 
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
 
 public class TrabalhandoComCurso {
@@ -21,5 +20,6 @@ public class TrabalhandoComCurso {
 
         int soma = cursos.stream().filter(curso -> curso.getAlunos() > 100).mapToInt(Curso::getAlunos).sum();
         System.out.println(soma);
+
     }
 }
